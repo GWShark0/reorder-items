@@ -1,0 +1,23 @@
+.app {
+  padding: 40px;
+}
+
+.reorder-list {
+  margin: auto;
+  width: 500px;
+}
+
+.add-button {
+  display: block;
+  margin: auto;
+  width: 500px;
+  line-height: 50px;
+  background: none;
+  border: none;
+  background-color: #53545b;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
