@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Icon from './Icon';
 
 import './ReorderItem.scss';
 
-function ReorderItem(props) {
-  const { children, onDelete } = props;
+const ReorderItem = forwardRef((props, ref) => {
+  const { children, onDelete, ...rest } = props;
   return (
-    <div className="reorder-item">
+    <div className="reorder-item" {...rest} ref={ref}>
       <span className="reorder-item__handle">
         <Icon id="hamburger" />
       </span>
@@ -18,6 +18,6 @@ function ReorderItem(props) {
       </span>
     </div>
   );
-}
+});
 
 export default ReorderItem;
